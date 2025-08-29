@@ -51,7 +51,11 @@
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dailyBrew정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pbCoffeeImg = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbAdvice = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -59,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCoffeeImg)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -95,6 +100,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lbAdvice);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.pbCoffeeImg);
             this.groupBox2.Location = new System.Drawing.Point(410, 29);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(378, 409);
@@ -258,18 +266,18 @@
             // 내역불러오기ToolStripMenuItem
             // 
             this.내역불러오기ToolStripMenuItem.Name = "내역불러오기ToolStripMenuItem";
-            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.내역불러오기ToolStripMenuItem.Text = "내역 불러오기";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             // 
             // 도움말ToolStripMenuItem
@@ -283,8 +291,37 @@
             // dailyBrew정보ToolStripMenuItem
             // 
             this.dailyBrew정보ToolStripMenuItem.Name = "dailyBrew정보ToolStripMenuItem";
-            this.dailyBrew정보ToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.dailyBrew정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dailyBrew정보ToolStripMenuItem.Text = "Daily Brew 정보";
+            // 
+            // pbCoffeeImg
+            // 
+            this.pbCoffeeImg.Image = ((System.Drawing.Image)(resources.GetObject("pbCoffeeImg.Image")));
+            this.pbCoffeeImg.Location = new System.Drawing.Point(64, 35);
+            this.pbCoffeeImg.Name = "pbCoffeeImg";
+            this.pbCoffeeImg.Size = new System.Drawing.Size(250, 250);
+            this.pbCoffeeImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCoffeeImg.TabIndex = 0;
+            this.pbCoffeeImg.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(108, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "오늘의 커피 추천";
+            // 
+            // lbAdvice
+            // 
+            this.lbAdvice.FormattingEnabled = true;
+            this.lbAdvice.ItemHeight = 12;
+            this.lbAdvice.Location = new System.Drawing.Point(25, 259);
+            this.lbAdvice.Name = "lbAdvice";
+            this.lbAdvice.Size = new System.Drawing.Size(329, 136);
+            this.lbAdvice.TabIndex = 2;
             // 
             // Enterinformation
             // 
@@ -299,6 +336,8 @@
             this.Text = "Enterinformation";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -307,6 +346,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCoffeeImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +376,8 @@
         private System.Windows.Forms.RadioButton btnanxiety;
         private System.Windows.Forms.RadioButton btnfatigue;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pbCoffeeImg;
+        private System.Windows.Forms.ListBox lbAdvice;
     }
 }
