@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace DailyBrew
 {
-    public partial class Enterinformation : Form
+    public partial class FormInformation : Form
     {
-        public Enterinformation()
+        public FormInformation()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

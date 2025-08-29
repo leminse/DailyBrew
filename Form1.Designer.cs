@@ -64,6 +64,7 @@
             this.btnfortune.TabIndex = 2;
             this.btnfortune.Text = "운세 보기";
             this.btnfortune.UseVisualStyleBackColor = true;
+            this.btnfortune.Click += new System.EventHandler(this.btnfortune_Click);
             // 
             // Form1
             // 

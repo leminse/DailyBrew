@@ -10,20 +10,16 @@ using System.Windows.Forms;
 
 namespace DailyBrew
 {
-    public partial class Form1 : Form
+    public partial class FormEnterinformation : Form
     {
-        public Form1()
+        public FormEnterinformation()
         {
             InitializeComponent();
         }
 
-        private void btnfortune_Click(object sender, EventArgs e)
+        private void dailyBrew정보ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormEnterinformation enterinformation = new FormEnterinformation();
 
-            this.Hide();
-
-            enterinformation.Show();
         }
     }
 }

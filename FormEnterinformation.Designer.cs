@@ -1,6 +1,6 @@
 ﻿namespace DailyBrew
 {
-    partial class Enterinformation
+    partial class FormEnterinformation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Enterinformation));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEnterinformation));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btntranquility = new System.Windows.Forms.RadioButton();
-            this.btnanger = new System.Windows.Forms.RadioButton();
             this.btnanxiety = new System.Windows.Forms.RadioButton();
-            this.btnfatigue = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.btnsad = new System.Windows.Forms.RadioButton();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btntranquility = new System.Windows.Forms.RadioButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnfatigue = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnsad = new System.Windows.Forms.RadioButton();
+            this.btnanger = new System.Windows.Forms.RadioButton();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbAdvice = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pbCoffeeImg = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.내역불러오기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,23 +54,21 @@
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dailyBrew정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pbCoffeeImg = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbAdvice = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCoffeeImg)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.btnanxiety);
             this.groupBox1.Controls.Add(this.btntranquility);
             this.groupBox1.Controls.Add(this.pictureBox4);
@@ -88,27 +89,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "오늘의 기분 선택";
             // 
-            // button1
+            // btnanxiety
             // 
-            this.button1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(120, 333);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 43);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "선택 완료";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lbAdvice);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.pbCoffeeImg);
-            this.groupBox2.Location = new System.Drawing.Point(410, 29);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(378, 409);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "오늘의 커피 추천";
+            this.btnanxiety.AutoSize = true;
+            this.btnanxiety.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnanxiety.Location = new System.Drawing.Point(280, 259);
+            this.btnanxiety.Name = "btnanxiety";
+            this.btnanxiety.Size = new System.Drawing.Size(59, 24);
+            this.btnanxiety.TabIndex = 9;
+            this.btnanxiety.TabStop = true;
+            this.btnanxiety.Text = "불안";
+            this.btnanxiety.UseVisualStyleBackColor = true;
             // 
             // btntranquility
             // 
@@ -122,29 +113,15 @@
             this.btntranquility.Text = "평온";
             this.btntranquility.UseVisualStyleBackColor = true;
             // 
-            // btnanger
+            // pictureBox4
             // 
-            this.btnanger.AutoSize = true;
-            this.btnanger.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnanger.Location = new System.Drawing.Point(158, 132);
-            this.btnanger.Name = "btnanger";
-            this.btnanger.Size = new System.Drawing.Size(59, 24);
-            this.btnanger.TabIndex = 10;
-            this.btnanger.TabStop = true;
-            this.btnanger.Text = "분노";
-            this.btnanger.UseVisualStyleBackColor = true;
-            // 
-            // btnanxiety
-            // 
-            this.btnanxiety.AutoSize = true;
-            this.btnanxiety.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnanxiety.Location = new System.Drawing.Point(280, 259);
-            this.btnanxiety.Name = "btnanxiety";
-            this.btnanxiety.Size = new System.Drawing.Size(59, 24);
-            this.btnanxiety.TabIndex = 9;
-            this.btnanxiety.TabStop = true;
-            this.btnanxiety.Text = "불안";
-            this.btnanxiety.UseVisualStyleBackColor = true;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(263, 174);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
             // 
             // btnfatigue
             // 
@@ -158,17 +135,25 @@
             this.btnfatigue.Text = "피로";
             this.btnfatigue.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // button1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.radioButton1.Location = new System.Drawing.Point(38, 132);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 24);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "기쁨";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(120, 333);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 43);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "선택 완료";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(142, 174);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(90, 90);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
             // 
             // btnsad
             // 
@@ -182,15 +167,17 @@
             this.btnsad.Text = "슬픔";
             this.btnsad.UseVisualStyleBackColor = true;
             // 
-            // pictureBox6
+            // btnanger
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(142, 174);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
+            this.btnanger.AutoSize = true;
+            this.btnanger.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnanger.Location = new System.Drawing.Point(158, 132);
+            this.btnanger.Name = "btnanger";
+            this.btnanger.Size = new System.Drawing.Size(59, 24);
+            this.btnanger.TabIndex = 10;
+            this.btnanger.TabStop = true;
+            this.btnanger.Text = "분노";
+            this.btnanger.UseVisualStyleBackColor = true;
             // 
             // pictureBox5
             // 
@@ -202,15 +189,17 @@
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             // 
-            // pictureBox4
+            // radioButton1
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(263, 174);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(90, 90);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.radioButton1.Location = new System.Drawing.Point(38, 132);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(58, 24);
+            this.radioButton1.TabIndex = 7;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "기쁨";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -242,6 +231,48 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.lbAdvice);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.pbCoffeeImg);
+            this.groupBox2.Location = new System.Drawing.Point(410, 29);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(378, 409);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "오늘의 커피 추천";
+            // 
+            // lbAdvice
+            // 
+            this.lbAdvice.FormattingEnabled = true;
+            this.lbAdvice.ItemHeight = 12;
+            this.lbAdvice.Location = new System.Drawing.Point(25, 259);
+            this.lbAdvice.Name = "lbAdvice";
+            this.lbAdvice.Size = new System.Drawing.Size(329, 136);
+            this.lbAdvice.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(108, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "오늘의 커피 추천";
+            // 
+            // pbCoffeeImg
+            // 
+            this.pbCoffeeImg.Image = ((System.Drawing.Image)(resources.GetObject("pbCoffeeImg.Image")));
+            this.pbCoffeeImg.Location = new System.Drawing.Point(64, 35);
+            this.pbCoffeeImg.Name = "pbCoffeeImg";
+            this.pbCoffeeImg.Size = new System.Drawing.Size(250, 250);
+            this.pbCoffeeImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCoffeeImg.TabIndex = 0;
+            this.pbCoffeeImg.TabStop = false;
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -266,18 +297,18 @@
             // 내역불러오기ToolStripMenuItem
             // 
             this.내역불러오기ToolStripMenuItem.Name = "내역불러오기ToolStripMenuItem";
-            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.내역불러오기ToolStripMenuItem.Text = "내역 불러오기";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
             // 
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             // 
             // 도움말ToolStripMenuItem
@@ -293,60 +324,33 @@
             this.dailyBrew정보ToolStripMenuItem.Name = "dailyBrew정보ToolStripMenuItem";
             this.dailyBrew정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dailyBrew정보ToolStripMenuItem.Text = "Daily Brew 정보";
+            this.dailyBrew정보ToolStripMenuItem.Click += new System.EventHandler(this.dailyBrew정보ToolStripMenuItem_Click);
             // 
-            // pbCoffeeImg
-            // 
-            this.pbCoffeeImg.Image = ((System.Drawing.Image)(resources.GetObject("pbCoffeeImg.Image")));
-            this.pbCoffeeImg.Location = new System.Drawing.Point(64, 35);
-            this.pbCoffeeImg.Name = "pbCoffeeImg";
-            this.pbCoffeeImg.Size = new System.Drawing.Size(250, 250);
-            this.pbCoffeeImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCoffeeImg.TabIndex = 0;
-            this.pbCoffeeImg.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(108, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "오늘의 커피 추천";
-            // 
-            // lbAdvice
-            // 
-            this.lbAdvice.FormattingEnabled = true;
-            this.lbAdvice.ItemHeight = 12;
-            this.lbAdvice.Location = new System.Drawing.Point(25, 259);
-            this.lbAdvice.Name = "lbAdvice";
-            this.lbAdvice.Size = new System.Drawing.Size(329, 136);
-            this.lbAdvice.TabIndex = 2;
-            // 
-            // Enterinformation
+            // FormEnterinformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(219)))), ((int)(((byte)(207)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Enterinformation";
+            this.Name = "FormEnterinformation";
             this.Text = "Enterinformation";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCoffeeImg)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCoffeeImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
