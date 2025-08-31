@@ -85,7 +85,8 @@ namespace DailyBrew
 
         private void savehistory(FortuneDate data)
         {
-            string filePath = "recommendation_history.txt";
+            string downloadsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string filePath = Path.Combine(downloadsPath, "Downloads", "recommendation_history.txt");
             string adviceText = string.Join(" ", data.Advices);
             string content = $" 감정: {pickmood}, 커피: {data.CoffeeName}, 조언: {adviceText}\n";
             File.AppendAllText(filePath, content);
