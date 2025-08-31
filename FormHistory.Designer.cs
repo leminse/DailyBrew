@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnnew = new System.Windows.Forms.Button();
-            this.lbhistory = new System.Windows.Forms.ListBox();
+            this.rtbhistory = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btnnew
@@ -42,21 +42,20 @@
             this.btnnew.Text = "새로고침";
             this.btnnew.UseVisualStyleBackColor = true;
             // 
-            // lbhistory
+            // rtbhistory
             // 
-            this.lbhistory.FormattingEnabled = true;
-            this.lbhistory.ItemHeight = 12;
-            this.lbhistory.Location = new System.Drawing.Point(12, 80);
-            this.lbhistory.Name = "lbhistory";
-            this.lbhistory.Size = new System.Drawing.Size(776, 352);
-            this.lbhistory.TabIndex = 1;
+            this.rtbhistory.Location = new System.Drawing.Point(12, 80);
+            this.rtbhistory.Name = "rtbhistory";
+            this.rtbhistory.Size = new System.Drawing.Size(776, 352);
+            this.rtbhistory.TabIndex = 2;
+            this.rtbhistory.Text = "";
             // 
             // FormHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbhistory);
+            this.Controls.Add(this.rtbhistory);
             this.Controls.Add(this.btnnew);
             this.Name = "FormHistory";
             this.Text = "FormHistory";
@@ -67,6 +66,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnnew;
-        private System.Windows.Forms.ListBox lbhistory;
+        private System.Windows.Forms.RichTextBox rtbhistory;
     }
 }

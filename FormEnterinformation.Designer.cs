@@ -44,7 +44,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lbAdvice = new System.Windows.Forms.ListBox();
+            this.rtbAdvice = new System.Windows.Forms.RichTextBox();
             this.lbcoffeename = new System.Windows.Forms.Label();
             this.pbCoffeeImg = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -235,7 +235,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.lbAdvice);
+            this.groupBox2.Controls.Add(this.rtbAdvice);
             this.groupBox2.Controls.Add(this.lbcoffeename);
             this.groupBox2.Controls.Add(this.pbCoffeeImg);
             this.groupBox2.Location = new System.Drawing.Point(410, 29);
@@ -245,14 +245,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "오늘의 커피 추천";
             // 
-            // lbAdvice
+            // rtbAdvice
             // 
-            this.lbAdvice.FormattingEnabled = true;
-            this.lbAdvice.ItemHeight = 12;
-            this.lbAdvice.Location = new System.Drawing.Point(25, 259);
-            this.lbAdvice.Name = "lbAdvice";
-            this.lbAdvice.Size = new System.Drawing.Size(329, 136);
-            this.lbAdvice.TabIndex = 2;
+            this.rtbAdvice.Location = new System.Drawing.Point(26, 250);
+            this.rtbAdvice.Name = "rtbAdvice";
+            this.rtbAdvice.Size = new System.Drawing.Size(329, 136);
+            this.rtbAdvice.TabIndex = 4;
+            this.rtbAdvice.Text = "";
             // 
             // lbcoffeename
             // 
@@ -385,6 +384,6 @@
         private System.Windows.Forms.RadioButton btnjoy;
         private System.Windows.Forms.Label lbcoffeename;
         private System.Windows.Forms.PictureBox pbCoffeeImg;
-        private System.Windows.Forms.ListBox lbAdvice;
+        private System.Windows.Forms.RichTextBox rtbAdvice;
     }
 }

@@ -68,27 +68,26 @@ namespace DailyBrew
                 pbCoffeeImg.Image = data.CoffeeImage;
                 lbcoffeename.Text = $"{data.CoffeeName}";
 
-                lbAdvice.Items.Clear();
+                rtbAdvice.Clear();
                 Random random = new Random();
                 string selectAdivce = data.Advices[random.Next(data.Advices.Count)];
-                lbAdvice.Items.Add(selectAdivce);
-                savehistory(data);
+                rtbAdvice.Text = selectAdivce;
+                savehistory(data, selectAdivce);
             }
             else
             {
                 pbCoffeeImg.Image = null;
                 lbcoffeename.Text = "운세 로딩 실패";
-                lbAdvice.Items.Clear();
-                lbAdvice.Items.Add("추천을 가져오는 데 실패했습니다.");
+                rtbAdvice.Clear();
+                rtbAdvice.Text = "추천을 가져오는 데 실패했습니다.";
             }
         }
 
-        private void savehistory(FortuneDate data)
+        private void savehistory(FortuneDate data, string selectAdivce)
         {
             string downloadsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
             string filePath = Path.Combine(downloadsPath, "Downloads", "recommendation_history.txt");
-            string adviceText = string.Join(" ", data.Advices);
-            string content = $" 감정: {pickmood}, 커피: {data.CoffeeName}, 조언: {adviceText}\n";
+            string content = $" 감정: {pickmood}, 커피: {data.CoffeeName}, 조언: {selectAdivce}\n\n";
             File.AppendAllText(filePath, content);
         }
     }

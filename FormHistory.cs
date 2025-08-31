@@ -23,7 +23,7 @@ namespace DailyBrew
 
         private void Btnnew_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            LoadHistory();
         }
 
         private void FormHistory_Load(object sender, EventArgs e)
@@ -33,22 +33,21 @@ namespace DailyBrew
 
         private void LoadHistory()
         {
-            string filePath = "recommendation_history.txt";
-            lbhistory.Items.Clear();
+            string downloadsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string filePath = Path.Combine(downloadsPath, "Downloads", "recommendation_history.txt");
+            rtbhistory.Clear();
 
             if (File.Exists(filePath))
             {
-                // 파일의 모든 줄을 읽어와 리스트박스에 추가
                 string[] lines = File.ReadAllLines(filePath);
                 foreach (string line in lines)
                 {
-                    lbhistory.Items.Add(line);
+                    rtbhistory.AppendText(line + Environment.NewLine);
                 }
             }
             else
-            {
-                // 파일이 존재하지 않을 경우 메시지 표시
-                lbhistory.Items.Add("저장된 내역이 없습니다.");
+            {   
+                rtbhistory.Text = "저장된 내역이 없습니다.";
             }
         }
     }
