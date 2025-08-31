@@ -34,18 +34,18 @@
             this.btntranquility = new System.Windows.Forms.RadioButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnfatigue = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnpick = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btnsad = new System.Windows.Forms.RadioButton();
             this.btnanger = new System.Windows.Forms.RadioButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btnjoy = new System.Windows.Forms.RadioButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lbAdvice = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbcoffeename = new System.Windows.Forms.Label();
             this.pbCoffeeImg = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -73,12 +73,12 @@
             this.groupBox1.Controls.Add(this.btntranquility);
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.btnfatigue);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnpick);
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Controls.Add(this.btnsad);
             this.groupBox1.Controls.Add(this.btnanger);
             this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.btnjoy);
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
@@ -92,10 +92,10 @@
             // btnanxiety
             // 
             this.btnanxiety.AutoSize = true;
-            this.btnanxiety.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnanxiety.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnanxiety.Location = new System.Drawing.Point(280, 259);
             this.btnanxiety.Name = "btnanxiety";
-            this.btnanxiety.Size = new System.Drawing.Size(59, 24);
+            this.btnanxiety.Size = new System.Drawing.Size(58, 28);
             this.btnanxiety.TabIndex = 9;
             this.btnanxiety.TabStop = true;
             this.btnanxiety.Text = "불안";
@@ -104,10 +104,10 @@
             // btntranquility
             // 
             this.btntranquility.AutoSize = true;
-            this.btntranquility.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btntranquility.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btntranquility.Location = new System.Drawing.Point(280, 132);
             this.btntranquility.Name = "btntranquility";
-            this.btntranquility.Size = new System.Drawing.Size(58, 24);
+            this.btntranquility.Size = new System.Drawing.Size(58, 28);
             this.btntranquility.TabIndex = 11;
             this.btntranquility.TabStop = true;
             this.btntranquility.Text = "평온";
@@ -126,24 +126,25 @@
             // btnfatigue
             // 
             this.btnfatigue.AutoSize = true;
-            this.btnfatigue.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnfatigue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnfatigue.Location = new System.Drawing.Point(159, 259);
             this.btnfatigue.Name = "btnfatigue";
-            this.btnfatigue.Size = new System.Drawing.Size(58, 24);
+            this.btnfatigue.Size = new System.Drawing.Size(58, 28);
             this.btnfatigue.TabIndex = 8;
             this.btnfatigue.TabStop = true;
             this.btnfatigue.Text = "피로";
             this.btnfatigue.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnpick
             // 
-            this.button1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(120, 333);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 43);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "선택 완료";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnpick.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnpick.Location = new System.Drawing.Point(120, 333);
+            this.btnpick.Name = "btnpick";
+            this.btnpick.Size = new System.Drawing.Size(130, 43);
+            this.btnpick.TabIndex = 19;
+            this.btnpick.Text = "선택 완료";
+            this.btnpick.UseVisualStyleBackColor = true;
+            this.btnpick.Click += new System.EventHandler(this.btnpick_Click);
             // 
             // pictureBox6
             // 
@@ -158,10 +159,10 @@
             // btnsad
             // 
             this.btnsad.AutoSize = true;
-            this.btnsad.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnsad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnsad.Location = new System.Drawing.Point(37, 259);
             this.btnsad.Name = "btnsad";
-            this.btnsad.Size = new System.Drawing.Size(59, 24);
+            this.btnsad.Size = new System.Drawing.Size(58, 28);
             this.btnsad.TabIndex = 6;
             this.btnsad.TabStop = true;
             this.btnsad.Text = "슬픔";
@@ -170,10 +171,10 @@
             // btnanger
             // 
             this.btnanger.AutoSize = true;
-            this.btnanger.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnanger.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnanger.Location = new System.Drawing.Point(158, 132);
             this.btnanger.Name = "btnanger";
-            this.btnanger.Size = new System.Drawing.Size(59, 24);
+            this.btnanger.Size = new System.Drawing.Size(58, 28);
             this.btnanger.TabIndex = 10;
             this.btnanger.TabStop = true;
             this.btnanger.Text = "분노";
@@ -189,17 +190,17 @@
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             // 
-            // radioButton1
+            // btnjoy
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.radioButton1.Location = new System.Drawing.Point(38, 132);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 24);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "기쁨";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.btnjoy.AutoSize = true;
+            this.btnjoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnjoy.Location = new System.Drawing.Point(38, 132);
+            this.btnjoy.Name = "btnjoy";
+            this.btnjoy.Size = new System.Drawing.Size(58, 28);
+            this.btnjoy.TabIndex = 7;
+            this.btnjoy.TabStop = true;
+            this.btnjoy.Text = "기쁨";
+            this.btnjoy.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -235,7 +236,7 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.lbAdvice);
-            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.lbcoffeename);
             this.groupBox2.Controls.Add(this.pbCoffeeImg);
             this.groupBox2.Location = new System.Drawing.Point(410, 29);
             this.groupBox2.Name = "groupBox2";
@@ -253,15 +254,15 @@
             this.lbAdvice.Size = new System.Drawing.Size(329, 136);
             this.lbAdvice.TabIndex = 2;
             // 
-            // label1
+            // lbcoffeename
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("학교안심 둥근미소 TTF R", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(108, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "오늘의 커피 추천";
+            this.lbcoffeename.AutoSize = true;
+            this.lbcoffeename.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbcoffeename.Location = new System.Drawing.Point(108, 35);
+            this.lbcoffeename.Name = "lbcoffeename";
+            this.lbcoffeename.Size = new System.Drawing.Size(158, 29);
+            this.lbcoffeename.TabIndex = 1;
+            this.lbcoffeename.Text = "오늘의 커피 추천";
             // 
             // pbCoffeeImg
             // 
@@ -299,6 +300,7 @@
             this.내역불러오기ToolStripMenuItem.Name = "내역불러오기ToolStripMenuItem";
             this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.내역불러오기ToolStripMenuItem.Text = "내역 불러오기";
+            this.내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.내역불러오기ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -310,6 +312,7 @@
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
             this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
+            this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
             // 도움말ToolStripMenuItem
             // 
@@ -322,7 +325,7 @@
             // dailyBrew정보ToolStripMenuItem
             // 
             this.dailyBrew정보ToolStripMenuItem.Name = "dailyBrew정보ToolStripMenuItem";
-            this.dailyBrew정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dailyBrew정보ToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.dailyBrew정보ToolStripMenuItem.Text = "Daily Brew 정보";
             this.dailyBrew정보ToolStripMenuItem.Click += new System.EventHandler(this.dailyBrew정보ToolStripMenuItem_Click);
             // 
@@ -367,7 +370,7 @@
         private System.Windows.Forms.ToolStripMenuItem 끝내기ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dailyBrew정보ToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnpick;
         private System.Windows.Forms.RadioButton btnsad;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -379,8 +382,8 @@
         private System.Windows.Forms.RadioButton btnanger;
         private System.Windows.Forms.RadioButton btnanxiety;
         private System.Windows.Forms.RadioButton btnfatigue;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton btnjoy;
+        private System.Windows.Forms.Label lbcoffeename;
         private System.Windows.Forms.PictureBox pbCoffeeImg;
         private System.Windows.Forms.ListBox lbAdvice;
     }

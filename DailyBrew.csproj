@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoffeeFortune.cs" />
     <Compile Include="FormEnterinformation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +58,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistory.Designer.cs">
+      <DependentUpon>FormHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInformation.cs">
       <SubType>Form</SubType>
@@ -72,6 +79,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormHistory.resx">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInformation.resx">
       <DependentUpon>FormInformation.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +93,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +107,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\americano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafelatte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafemocha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cappuccino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caramelmacchiato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolcelatte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\einspanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\espresso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hazelnutlatte.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
